@@ -1,0 +1,10 @@
+/**
+    @file Diseño del nav flexible y del resto de la web.
+    @author Julio Antonio Ramos Gago (jramosgago.guadalupe@alumnado.fundacionloyola.net)
+*/
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
