@@ -1,3 +1,8 @@
+<?php
+    
+    require 'php/metodos.php';
+    $metodos = new Metodos();
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -5,7 +10,6 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Nav, Cajas Flexible, Nav Flexible, Inicio de Sesión" />
         <meta name="description" content="Nav Flexible con Inicio de Sesión" />
         <meta name="author" content="Julio Antonio Ramos Gago <jramosgago.guadalupe@alumnado.fundacionloyola.net>" />
         <!--Título-->
@@ -13,23 +17,26 @@
         <!--CSS-->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <!--Fuentes de Google-->
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-        <!--Iconos-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     </head>
     <body>
         <header>
             <nav>
-
+                <div>
+                    <a href="">Inicio</a>
+                </div>
+                <div>
+                    <a href="">Quienes Somos</a>
+                </div>
+                <?php
+                    $metodos -> comprobar_sesion();
+                ?>
             </nav>
         </header>
         <main>
-
+            <h1>Página de Inicio</h1>
         </main>
         <footer>
-            
+            <div>Julio Antonio Ramos Gago || Diseño de Interfaces</div>
         </footer>
     </body>
 </html>
